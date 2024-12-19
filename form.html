@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 500px;
+            height: auto;
+            border-style: double;
+            border-color: black;
+            border-width: 10px;
+            background-color:rgb(240, 241, 243);
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            padding-left: 0.5px;
+            /*padding-bottom: 40px;
+            padding-top:30px ;*/
+        }
+      border{
+        cursor:n-resize;
+      }
+        .p{
+            text-align: center;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color:pink;
+            margin:0 auto 20px auto;
+            width: fit-content;
+            
+        }
+        h{
+            font-style: italic;
+            font-family: cursive;
+            flex: 1;
+        }
+        .button{
+            margin-left: 90px;
+            margin-top: 30px;
+            padding: 5px;
+            text-decoration: dotted;
+            font-size: medium;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            background-color: green;
+            border-style: none;
+            color: aliceblue;
+            border-radius: 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:lighter;
+           
+            
+        }
+        .button:hover{
+            opacity: 0.8;
+            background-color: white;
+            color: black;
+            transition: opacity 0.6s,background-color 0.6s, color 0.6s;
+        }
+        .button:active{
+            background-color: green;
+            color: aliceblue;
+        }
+        .group{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+
+
+        }
+        
+        
+        .group input{
+            flex: 2;
+            padding: 5px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+        select{
+            margin-left: 85px;
+        }
+        ::placeholder{
+            text-align: right;
+        }
+        ::placeholder:active{
+            text-transform:clear;
+        }
+        input{
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3 class="p">Personal data</h3>
+            <div style="margin-bottom: 30px;line-height: 1.6;">
+        <ol style="list-style-type: none;">
+            <div class="group">
+            <h>Name: </h>
+            <input type="text" value=""placeholder="Enter your name">
+            </div>
+            <div class="group">
+<h>Roll number: </h>
+<input type="text" value=""  placeholder="Enter roll number">
+</div>
+<div class="group"><h>phone number</h><input type="text" value="" placeholder="enter number">
+</div>
+<div class="group">
+<h>Adhar number: </h>
+<input type="text" value="" placeholder="Enter Adhar number">
+</div>
+<div class="group"></div>
+<div class="group">
+<h>Father name: </h>
+<input type="text" value="" placeholder="Enter father's name">
+</div>
+<div class="group">
+<h>Mother name: </h>
+<input type="text" value="" placeholder="Enter mother's name">
+</div>
+<div class="group">
+<h>Phone number: </h>
+<input type="text" value="" placeholder="Enter phone number">
+</div>
+<div class="group">
+<h>Gender: 
+  <select style="cursor: pointer; flex: 2;">
+    <option  value="">Male</option>
+    <option  value="female">Female</option>
+    <option  value="other">Other</option>
+  </select>
+
+</h>
+</div>
+<div class="group">
+<h>Passed out: </h>
+<input type="text" value="" placeholder="Enter passing year">
+</div>
+<div class="group">
+<h>Qualification: </h>
+<input type="text" value="" placeholder="Enter qualification">
+</div>
+</div>
+        </ol>
+    
+    <button class="button">submit</button>
+    <button class="button">clear</button>
+    </div>
+</body>
+</html>
